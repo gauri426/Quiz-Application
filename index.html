@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">ThinkFast</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Quiz</h1>
+            <p>Test your knowledge and climb the leaderboard!</p>
+            <a href="#quizzes" class="btn">Start Quiz</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>We are a team of passionate developers creating fun and interactive quizzes to help you learn and grow.</p>
+            <div class="about-cards">
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Join a growing community of learners.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Achievements</h3>
+                    <p>Earn badges and climb the leaderboard.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <h3>Learning</h3>
+                    <p>Learn new topics every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quizzes Section -->
+    <section id="quizzes" class="quizzes">
+        <h2>Choose a Quiz</h2>
+        <div class="quiz-cards">
+            <div class="card" data-category="gk">
+                <i class="fas fa-globe"></i>
+                <h3>General Knowledge</h3>
+                <p>Test your general knowledge skills.</p>
+            </div>
+            <div class="card" data-category="programming">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Challenge your coding knowledge.</p>
+            </div>
+            <div class="card" data-category="science">
+                <i class="fas fa-flask"></i>
+                <h3>Science</h3>
+                <p>Explore the world of science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Questions Section -->
+    <section id="quiz-questions" class="quiz-questions hidden">
+        <h2 id="quiz-title"></h2>
+        <div class="timer">Time Left: <span id="time">10</span>s</div>
+        <div id="question-container"></div>
+        <button id="next-btn" class="btn">Next</button>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Leaderboard data will be populated here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-content">
+            <div class="feature-card">
+                <i class="fas fa-stopwatch"></i>
+                <h3>Timed Quizzes</h3>
+                <p>Challenge yourself with timed quizzes.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Leaderboard</h3>
+                <p>Compete with others and climb the leaderboard.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificates</h3>
+                <p>Earn certificates for your achievements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Quiz App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
